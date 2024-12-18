@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Participatie verhalen</title>
+    <!-- Hoofdstylesheet -->
+    <link href="opmaak_verhalen.css" rel="stylesheet" type="text/css" />
+    <!-- Stylesheet specifiek voor knoppen -->
+    <link href="filter.css" rel="stylesheet" type="text/css" />
+    <link href="markercluster/MarkerCluster.css" rel="stylesheet" />
+    <link href="markercluster/MarkerCluster.Default.css" rel="stylesheet"/>
+    <!-- Import external libraries Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+<link href="search/search.css" rel="stylesheet"/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    <script src="markercluster/leaflet.markercluster.js">
+    </script>
+    <!-- Import jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="search/search.js"></script>
+
+        <!-- Import own Javascript -->
+    <script src="kaart.js" ></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="column1">
+                <a href="home.html"><img id="logo" src="afbeeldingen/logo_wit.png" alt="logo" class="left"></a>
+            </div> 
+        </div>
+        
+    </header>    
+
+    <ul class="navbar">
+        <li><a href="participatiemethoden.html">Participatiemethoden</a></li>
+        <li><a href="verhalen.html">Verhalen uit het werkveld</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="topnav">
+            <div class="login-container">
+                <input type="text" placeholder="Gebruikersnaam" name="username">
+                <input type="text" placeholder="Wachtwoord" name="psw">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </ul>
+    
+<main>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <div style="padding-left:0px">
+                <h2>Inleidende tekst/welkomst tekst</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit consequat lectus at aliquet. Cras finibus urna mauris, at condimentum mauris consectetur id. Morbi vitae varius sem, at vulputate augue. Aenean ipsum diam, luctus eu nisi eu, iaculis egestas ligula. Nullam quis leo ut mauris pharetra convallis quis at tellus. Sed eget pharetra leo. Nulla eu scelerisque dolor. Sed mollis ultricies eros, vel scelerisque sem sagittis in. Vestibulum pharetra nisi neque, quis consequat velit pharetra eget. </p>
+            </div>
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+ 
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <div id="kaart"></div>
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <div style="padding-left:0px">
+                <h2>Uitleg over hoe de kaart werkt</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit consequat lectus at aliquet. Cras finibus urna mauris, at condimentum mauris consectetur id. Morbi vitae varius sem, at vulputate augue. Aenean ipsum diam, luctus eu nisi eu, iaculis egestas ligula. Nullam quis leo ut mauris pharetra convallis quis at tellus. Sed eget pharetra leo. Nulla eu scelerisque dolor. Sed mollis ultricies eros, vel scelerisque sem sagittis in. Vestibulum pharetra nisi neque, quis consequat velit pharetra eget. </p>
+            </div>
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+</main>
+<footer><br><br><br></footer>
+</body>
+</html>

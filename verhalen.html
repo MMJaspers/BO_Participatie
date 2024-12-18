@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Participatie verhalen</title>
+    <!-- Hoofdstylesheet -->
+    <link href="opmaak_verhalen.css" rel="stylesheet" type="text/css" />
+    <!-- Stylesheet specifiek voor knoppen -->
+    <link href="filter.css" rel="stylesheet" type="text/css" />
+    <!-- Stylesheet specifiek voor filter -->
+    <!--<link href="filter_lijst.css" rel="stylesheet" type="text/css" /> --> 
+    <script src="path/to/your/script.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="row">
+            <div class="column1">
+                <a href="home.html"><img id="logo" src="afbeeldingen/logo_wit.png" alt="logo" class="left"></a>>
+            </div> 
+        </div>
+        
+    </header>    
+
+    <ul class="navbar">
+        <li><a href="participatiemethoden.html">Participatiemethoden</a></li>
+        <li><a href="verhalen.html" class="active">Verhalen uit het werkveld</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <div class="topnav">
+            <div class="login-container">
+                <input type="text" placeholder="Gebruikersnaam" name="username">
+                <input type="text" placeholder="Wachtwoord" name="psw">
+                <button type="submit">Login</button>
+            </div>
+        </div>
+    </ul>
+    
+<main>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <div style="padding-left:0px">
+                <h2>Verhalen uit het werkveld</h2>
+                <p>Zoek met de filter naar participatietrajecten uit het verleden. Zet eerst alle filters aan en klik dan op de knop.</p>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Vind een verhaal..." name="search">
+                        <button type="submit">Filter</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="container">
+        <div class="box1"> </div>
+        <div class="box2">
+            <h3>Waar op de participatieladder?</h3>
+            <label class="checkbox-container">Informeren
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox-container">Raadplegen
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox-container">Adviseren
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox-container">Co-creatie
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label class="checkbox-container">Meebeslissen
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>       
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <label for="select-provincie"><h3>Selecteer een provincie</h3></label>
+            <p></p>
+            <select id="select-provincie" name="provincie">
+                <option value="Drenthe">Drenthe</option>
+                <option value="Flevoland">Flevoland</option>
+                <option value="Friesland">Friesland</option>
+                <option value="Gelderland">Gelderland</option>
+                <option value="Groningen">Groningen</option>
+                <option value="Limburg">Limburg</option>
+                <option value="Noord-Brabant">Noord-Brabant</option>
+                <option value="Noord-Holland">Noord-Holland</option>
+                <option value="Overijssel">Overijssel</option>
+                <option value="Utrecht">Utrecht</option>
+                <option value="Zeeland">Zeeland</option>
+                <option value="Zuid-Holland">Zuid-Holland</option>
+            </select>
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+                <label for="fname"><h3>Welk jaar?</h3></label>
+                <p></p>
+                <input type="text" id="fname" name="firstname" placeholder="Jaartal">
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div> 
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+                <label for="lname"><h3>Hoeveel deelnemers</h3></label>
+                <p></p>
+                <input type="text" id="lname" name="lastname" placeholder="Hoeveelheid">
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div> 
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+                <label for="lname"><h3>Welke participatiemethoden en tools</h3></label>
+                <p></p>
+                <input type="text" id="lname" name="lastname" placeholder="Participatiemethoden en tools">
+                <br>
+                <br>
+                <br>
+        </div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div> 
+</main>
+<footer><br><br><br></footer>
+</body>
+</html>
