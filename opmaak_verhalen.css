@@ -16,6 +16,10 @@ header {
     background-color: #01689B;
 }
 
+a {
+    color: white;
+}
+
 #logo {
     height: auto;
     max-width: 20%;
