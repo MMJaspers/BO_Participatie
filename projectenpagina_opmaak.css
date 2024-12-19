@@ -32,6 +32,12 @@ a {
     margin: 20px;
 }
 
+.cirkel {
+    height: auto;
+    max-width: 30%;
+    
+}
+
 /* Nav bar met knoppen over de hele breedte */
 ul.navbar {
     list-style-type: none;
@@ -164,6 +170,19 @@ ul.navbar li a.active {
     background: #0078C3;
 }
 
+table {
+    font-family: Lato;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+  td, th {
+    border: 2px solid #0078C3;
+    text-align: center;
+    padding: 8px;
+}
+
+
 /* Flex-container */
 .container {
     width: 100%;
@@ -181,7 +200,6 @@ ul.navbar li a.active {
     flex: 5;
     padding: 10px;
     text-align: left;
-    border-bottom: 3px solid #0078C3;
 }
 
 .box3 {
@@ -234,11 +252,11 @@ font-family: 'Lato';
         flex-direction: column;
     }
 
-    #container {
+    .container {
         flex-direction: column;
     }
 
-    #box2, #box3, #box4 {
+    .box2, .box3, .box4 {
         text-align: center;
     }
 
