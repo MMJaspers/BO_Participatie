@@ -1,0 +1,280 @@
+/* Inladen van custom fonts */
+@font-face {
+    font-family: "Lato";
+    src: url("./Lato/Lato-Regular.ttf");
+}
+
+/* Algemene body-stijlen */
+body {
+    margin: 0;
+    font-family: Lato, sans-serif;
+    color: #707070;
+    background-color: #EBF2F5;
+}
+
+header {
+    background-color: #01689B;
+}
+
+a {
+    color: white;
+}
+
+#logo {
+    height: auto;
+    max-width: 20%;
+    margin: 20px;
+}
+
+/* Nav bar met knoppen over de hele breedte */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #01689B;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10px;
+}
+
+/* Stijl van de knoppen */
+ul.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Hover-effect */
+ul.navbar li a:hover,
+ul.navbar li a.active {
+    background-color:  #077BC6;
+}
+
+/* Login-container */
+.topnav .login-container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 8px 16px;
+}
+
+/* Input veld voor login */
+.topnav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 10px;
+}
+
+/* Login knop */
+.topnav .login-container button {
+    padding: 6px 10px;
+    margin-left: 10px;
+    background: #077BC6;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
+
+.topnav .login-container button:hover {
+    background: #0078C3;
+    color: white;
+}
+
+/* Zoek-container */
+.search-container {
+    display: flex;
+    justify-content: left;
+    align-items: left; /* Zorgt voor verticale uitlijning */
+    border-radius: 8px;
+    border: 1px black;
+    padding: 8px;
+    padding-left: 0px;
+    width: 100%; /* Laat de container de volledige breedte benutten */
+    max-width: 800px; /* Stel een maximale breedte in, indien nodig */
+    margin-left: 0;  /*Centraal uitlijnen in de parent-container */
+    gap: 10px; /* Ruimte tussen de elementen */
+}
+
+/* Zoekbalk zelf */
+/* Specifieke stijl voor het login-veld */
+.topnav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px; /* Specifieke breedte voor het login-veld */
+}
+
+/* Specifieke stijl voor de zoekbalk */
+.search-container input[type=text],
+#select-provincie, #lname, #fname {
+    padding: 15px;
+    font-size: 17px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 600px; /* Minimale breedte om consistent te blijven */
+    box-sizing: border-box; /* Inclusief padding in de breedte */
+    text-align: left; /* Tekst links uitlijnen */
+    vertical-align: middle; /* Verticale uitlijning centreren */
+    line-height: 1.5; /* Zorg voor consistente regelhoogte */
+}
+
+/* Hover-effect voor de dropdown */
+#select-provincie:hover {
+    background: #f1f1f1;
+    border-color: #0078C3;
+}
+
+/* Zoekknop */
+.search-container button {
+    padding: 15px 20px; /* Grotere knop voor betere zichtbaarheid */
+    background: #077BC6;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px; /* Ruimte tussen de knop en de input */
+    transition: background 0.3s ease;
+}
+
+.search-container button:hover {
+    background: #0078C3;
+}
+
+/* Flex-container */
+#container-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+#box1-1 {
+    flex: 2;
+    padding: 10px;
+}
+
+#box2-1 {
+    flex: 6;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 3px solid #0078C3;
+}
+
+#box3-1 {
+    flex: 1;
+    padding-right: 10px;
+}
+
+#box4-1 {
+    flex: 1;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.box1 {
+    flex: 2;
+    padding: 10px;
+}
+
+.box2 {
+    flex: 5;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 3px solid #0078C3;
+}
+
+.box3 {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.box4 {
+    flex: 2;
+    padding: 0 10px;
+    text-align: left;
+}
+
+footer {
+    background-color: #8FCAE7;
+}
+
+#kaart {
+    height: calc(100vh - 200px);
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Aangepaste CSS voor Leaflet-popup */
+.leaflet-popup-content {
+font-family: 'Lato';
+/* Vervang 'JouwGewensteLettertype' door het gewenste lettertype */
+}
+
+/* Responsieve opmaak */
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .search-container input[type=text],
+#select-provincie, #lname, #fname  {
+        min-width: 300px; 
+    }
+
+    ul.navbar {
+        flex-direction: column;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #box2, #box3, #box4 {
+        text-align: center;
+    }
+
+    .column1 h1 {
+        font-size: 35px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .column1 {
+        padding: 30px;
+    }
+}

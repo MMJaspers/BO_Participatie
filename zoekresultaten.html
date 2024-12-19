@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Participatie verhalen</title>
     <!-- Hoofdstylesheet -->
-    <link href="opmaak_verhalen.css" rel="stylesheet" type="text/css" />
+    <link href="opmaak_resultaten.css" rel="stylesheet" type="text/css" />
     <!-- Stylesheet specifiek voor knoppen -->
     <link href="filter.css" rel="stylesheet" type="text/css" />
     <!-- Stylesheet specifiek voor filter -->
@@ -26,8 +26,8 @@
 
     <ul class="navbar">
         <li><a href="home.html">Home</a></li>
-        <li><a href="participatiemethoden.html" class="active">Participatiemethoden</a></li>
-        <li><a href="verhalen.html">Verhalen uit het werkveld</a></li>
+        <li><a href="participatiemethoden.html">Participatiemethoden</a></li>
+        <li><a href="verhalen.html" class="active">Verhalen uit het werkveld</a></li>
         <li><a href="contact.html">Contact</a></li>
         <div class="topnav">
             <div class="login-container">
@@ -43,8 +43,13 @@
         <div class="box1"></div>
         <div class="box2">
             <div style="padding-left:0px">
-                <h2>Participatiemethoden</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit consequat lectus at aliquet. Cras finibus urna mauris, at condimentum mauris consectetur id. Morbi vitae varius sem, at vulputate augue. Aenean ipsum diam, luctus eu nisi eu, iaculis egestas ligula. Nullam quis leo ut mauris pharetra convallis quis at tellus. Sed eget pharetra leo. Nulla eu scelerisque dolor. Sed mollis ultricies eros, vel scelerisque sem sagittis in. Vestibulum pharetra nisi neque, quis consequat velit pharetra eget. </p>
+                <h2>Verhalen uit het werkveld</h2>
+                <div class="search-container">
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Vind een verhaal..." name="search">
+                        <button type="submit"><a href="zoekresultaten.html">Filter</a></button>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="box3"></div>
@@ -55,21 +60,41 @@
         <div class="box1"></div>
         <div class="box2">
             <div style="padding-left:0px">
-                <h3>Informatieavond</h3>
+                <h3>Projectnaam</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit consequat lectus at aliquet. Cras finibus urna mauris, at condimentum mauris consectetur id. Morbi vitae varius sem, at vulputate augue. Aenean ipsum diam, luctus eu nisi eu, iaculis egestas ligula. Nullam quis leo ut mauris pharetra convallis quis at tellus. Sed eget pharetra leo. Nulla eu scelerisque dolor. Sed mollis ultricies eros, vel scelerisque sem sagittis in. Vestibulum pharetra nisi neque, quis consequat velit pharetra eget. </p>
                 <br>
-                <h3>Klankbordgroep</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit consequat lectus at aliquet. Cras finibus urna mauris, at condimentum mauris consectetur id. Morbi vitae varius sem, at vulputate augue. Aenean ipsum diam, luctus eu nisi eu, iaculis egestas ligula. Nullam quis leo ut mauris pharetra convallis quis at tellus. Sed eget pharetra leo. Nulla eu scelerisque dolor. Sed mollis ultricies eros, vel scelerisque sem sagittis in. Vestibulum pharetra nisi neque, quis consequat velit pharetra eget.</p>
-                
-                <p>Fusce eros leo, congue a metus vel, laoreet ultrices orci. Quisque pellentesque, mi eu consequat suscipit, dolor nulla commodo purus, at aliquet est magna et ligula. Quisque pulvinar elit est, a feugiat lectus fringilla eget. Sed accumsan est sed magna tincidunt aliquam. Vivamus sed commodo enim, in rhoncus dui. Nulla non elit eget augue molestie rutrum eu eget augue. Sed arcu tortor, dictum vel felis sed, viverra pulvinar turpis. Maecenas maximus tempus erat non laoreet.</p>    
-                
-                   <p>Vestibulum sit amet leo aliquet, tincidunt magna sed, interdum mi. Nam ullamcorper convallis ligula id aliquam. Integer luctus vulputate feugiat. Pellentesque laoreet ut metus sit amet lacinia. Nullam posuere fringilla ipsum, eget sollicitudin lorem fermentum vel. Proin tempor leo sit amet enim rutrum, non consequat odio varius. Aenean lobortis scelerisque posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin fringilla gravida sodales. Duis non suscipit arcu. Sed facilisis maximus ultricies. Proin eu ornare elit, in interdum diam. Pellentesque ligula lectus, tincidunt malesuada rutrum quis, mollis et magna. </p>
-                   <br>
             </div>
         </div>
-        <div class="box3"></div>
+        <div class="box3"><img id="stoplicht" src="stoplicht_groen.png" alt="stoplicht" class="left"></div>
         <div class="box4"></div>
     </div>
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <div style="padding-left:0px">
+                <h3>Projectnaam</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit consequat lectus at aliquet. Cras finibus urna mauris, at condimentum mauris consectetur id. Morbi vitae varius sem, at vulputate augue. Aenean ipsum diam, luctus eu nisi eu, iaculis egestas ligula. Nullam quis leo ut mauris pharetra convallis quis at tellus. Sed eget pharetra leo. Nulla eu scelerisque dolor. Sed mollis ultricies eros, vel scelerisque sem sagittis in. Vestibulum pharetra nisi neque, quis consequat velit pharetra eget. </p>
+                <br>
+            </div>
+        </div>
+        <div class="box3"><img id="stoplicht" src="stoplicht_oranje.png" alt="stoplicht" class="left"></div>
+        <div class="box4"></div>
+    </div>
+
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2">
+            <div style="padding-left:0px">
+                <h3>Projectnaam</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit consequat lectus at aliquet. Cras finibus urna mauris, at condimentum mauris consectetur id. Morbi vitae varius sem, at vulputate augue. Aenean ipsum diam, luctus eu nisi eu, iaculis egestas ligula. Nullam quis leo ut mauris pharetra convallis quis at tellus. Sed eget pharetra leo. Nulla eu scelerisque dolor. Sed mollis ultricies eros, vel scelerisque sem sagittis in. Vestibulum pharetra nisi neque, quis consequat velit pharetra eget. </p>
+                <br>
+            </div>
+        </div>
+        <div class="box3"><img id="stoplicht" src="stoplicht_rood.png" alt="stoplicht" class="left"></div>
+        <div class="box4"></div>
+    </div>
+    <br>
 </main>
 <footer><br><br><br></footer>
 </body>
