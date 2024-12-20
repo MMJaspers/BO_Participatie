@@ -35,42 +35,31 @@ $(document).ready(function() {
     map.addLayer(boekwinkelCluster);
 
     $.ajax({
-        url: 'http://localhost:8080/geoserver/BookBizz/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=BookBizz%3Aboekwinkels&outputFormat=application%2Fjson',
-        dataType: 'json'
+        url: 'puntenlaag1.geojson', // Correct pad naar je GeoJSON-bestand
+        dataType: 'json' // Gebruik 'json' als dataType
     }).done(function(data) {
         console.log(data);
-        boekwinkellaag = new L.GeoJSON(data, {
+    
+        // Voeg de GeoJSON-data toe aan de kaart
+        let geoLayer = new L.GeoJSON(data, {
             pointToLayer: function(feature, latlng) {
                 var marker = L.marker(latlng, { icon: customIcon });
                 let prop = feature.properties;
     
-                // Maak de inhoud van properties.name vetgedrukt en een maatje groter
-                var popupContent = '<strong style="font-size: 150%;">' + feature.properties.name + '</strong>';
-                if (prop.website) {
-                    popupContent += '<br><a href="' + feature.properties.website + '" target="_blank" style="font-size: medium;">' + feature.properties.website + '</a>'
-                }
-                if(prop.street){
-                    popupContent+= '<br><span style="font-size: medium;">' + feature.properties.street + '</span>'
-                }
-                if(prop.housenumber){
-                    popupContent+= ' <span style="font-size: medium;">' + feature.properties.housenumber + '</span>'
-                }
-                if(prop.postcode){
-                    popupContent+= '<br><span style="font-size: medium;">' + feature.properties.postcode + '</span>'
-                }
-                if(prop.city){
-                    popupContent+= ' <span style="font-size: medium;">' + feature.properties.city + '</span>';
-                }
-            
+                // Stel popup-inhoud samen
+                var popupContent = `<strong style="font-size: 150%;">${prop.project_naam}</strong>`;
+                popupContent += `<br><b>Gemeente:</b> ${prop.gem_name}`;
+                popupContent += `<br><b>Score:</b> ${prop.score}`;
     
                 marker.bindPopup(popupContent);
                 return marker;
             }
         });
     
-        boekwinkelCluster.addLayer(boekwinkellaag);
-        //map.addControl(new L.Control.Search({ layer: boekwinkellaag, propertyName: 'city' }));
+        // Voeg de GeoJSON-laag toe aan de clusterlaag
+        boekwinkelCluster.addLayer(geoLayer);
     });
+    
     
     
     
